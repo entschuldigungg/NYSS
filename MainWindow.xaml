@@ -1,0 +1,44 @@
+﻿
+    <Window x:Name="window" x:Class="Appyyy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appyyy"
+        mc:Ignorable="d" Height="500" Width="900" Title="База угроз" FontWeight="Normal">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderThickness="1" BorderBrush="Black">
+            <Grid Background="AliceBlue" Margin="1,1,-1,-1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150*"/>
+                    <ColumnDefinition Width="149*"/>
+                    <ColumnDefinition Width="150*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Margin="188,6,0,0" FontSize="20" FontFamily="Arial" VerticalAlignment="Top" Height="85" Grid.RowSpan="2" HorizontalAlignment="Left" Width="558" TextWrapping="NoWrap" Grid.ColumnSpan="3" Grid.Row="1" ><Run Text="                    Вас приветствует парсер данных! "/><LineBreak/><Run Text="     Для начала работы, пожалуйста"/><Run Text=","/><Run Text=" выберите действие:"/></TextBlock>
+               
+
+                <Button x:Name="Open" Grid.Row="5" Grid.Column="1" Content="Открыть базу" Click="Openbutton"  Margin="274,5,62,60" Grid.ColumnSpan="2" BorderBrush="Black" Background="#FF8EEAF5" FontWeight="Bold" FontFamily="Arial" Grid.RowSpan="2" />
+                <Button x:Name="Download" Grid.Row="5" Grid.Column="0" Content="Скачать/обновить базу " Click="Downloadbutton" Margin="85,5,276,60" FontWeight="Bold" FontFamily="Arial" BorderBrush="Black" Background="#FF8EEAF5" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

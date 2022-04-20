@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appyyy"
+        xmlns:local1="clr-namespace:Appyyy;assembly=Appyyy" x:Class="Appyyy.Excekklein"
+        mc:Ignorable="d"
+        Title="Excekklein" Height="469" Width="900">
+    <Grid Margin="1,1,-1,-1" Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="Gr" Background="AliceBlue" Margin="0,0,5,89"   AreRowDetailsFrozen="True" AddingNewItem="Generate_rows"/>
+
+
+        <DataGrid x:Name="Gr1" Background="AliceBlue"  AutoGenerateColumns="False" AddingNewItem="Generate_rows1" Grid.Column="1" Margin="0,0,0,89"/>
+
+        <Button x:Name="Close" Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Click="Closation" Margin="229,393,266,0" Command="{Binding ClickMode, ElementName=Close}" Background="#FFEA3131" BorderBrush="Black" FontWeight="Bold">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap"
+                   Text="Закрыть парсер"/>
+        </Button>
+    </Grid>
+</Window>

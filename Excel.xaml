@@ -1,0 +1,49 @@
+﻿<Window x:Class="Appyyy.Excel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appyyy"
+        mc:Ignorable="d"
+        Title="Excel" Height="500" Width="900" >
+
+    <Grid x:Name="gridec" Background="AliceBlue" Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid x:Name="Gridecc" Background="AliceBlue" Margin="0,0,5,0"  AutoGenerateColumns="True"/>
+
+        <Button x:Name="Downloadexcel" Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Click="Down" BorderBrush="Black" Background="#FF8EEAF5" FontWeight="Bold">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap"
+                   Text="Загрузить таблицу"/>
+        </Button>
+
+
+        <Button x:Name="Close" Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Click="Closation" Margin="0,420,0,0" Command="{Binding ClickMode, ElementName=Close}" Background="#FFEA3131" BorderBrush="Black" FontWeight="Bold">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap"
+                   Text="Закрыть парсер"/>
+        </Button>
+
+        <Button x:Name="Klein" Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Click="Klein_Click" Margin="0,65,0,0"  Background="#FF8EEAF5" BorderBrush="Black" FontWeight="Bold">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap"
+                   Text="Загрузить краткую версию"/>
+        </Button>
+
+        <!--<Button  Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Content="Next" Click="OnNextClicked" Margin="0,129,0,0" >
+
+        </Button>
+
+
+        <Button  Grid.Column="1" VerticalAlignment="Top"
+            Padding="10,5" Content="Previous" Click="OnPreviousClicked" Margin="0,178,0,0" >
+
+        </Button>-->
+
+    </Grid>
+</Window>
